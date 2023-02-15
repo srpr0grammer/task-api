@@ -6,7 +6,7 @@ API-TASK + Docker.
 
 ## 💬 About the repository
 
-Repository where in creating and updating a taska in the database
+Repository where in creating and updating a task in the database
 ## ⚠ Prerequisites for project execution
 
 * docker
