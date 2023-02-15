@@ -1,0 +1,19 @@
+version: '3'
+services:
+  api:
+    container_name: task-api
+    image: task-api
+    build: ./
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+  db:
+    container_name: postgres-db-task-api
+    image: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: task-db
+    ports:
+      - "5433:5432"
